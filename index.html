@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GPT Static Delivery - Project 2</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">GPT Deliveries</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#recent">Recent Deliveries</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Fast & Static Delivery for Your Projects</h1>
+                <p>
+                    This static website is deployed on AWS EC2 using Terraform and
+                    auto-updated via Jenkins. Every commit you push becomes a live delivery.
+                </p>
+                <button class="primary-btn">
+                    🚀 View Latest Deliveries
+                </button>
+            </div>
+            <div class="hero-side">
+                <div class="stat-card">
+                    <h2>99.9%</h2>
+                    <p>Uptime</p>
+                </div>
+                <div class="stat-card">
+                    <h2>3 sec</h2>
+                    <p>Average Load Time</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- RECENT DELIVERIES SECTION -->
+        <section id="recent" class="recent-section">
+            <h2>Recent Deliveries</h2>
+            <p class="section-subtitle">
+                Latest deployments from GitHub → Jenkins → EC2
+            </p>
+
+            <div class="cards">
+                <div class="card">
+                    <div class="card-header">
+                        <span class="badge badge-success">Live</span>
+                        <span class="card-id">#DEL-1023</span>
+                    </div>
+                    <h3>UI Update - Hero Section</h3>
+                    <p>Pushed from <strong>main</strong> branch with new colors & button text.</p>
+                    <div class="card-footer">
+                        <span>⏱ 5 min ago</span>
+                        <span>✅ Deployed via Jenkins</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="badge badge-pending">Pending</span>
+                        <span class="card-id">#DEL-1022</span>
+                    </div>
+                    <h3>Content Change - About Section</h3>
+                    <p>Static content updated for project description and delivery notes.</p>
+                    <div class="card-footer">
+                        <span>⏱ 30 min ago</span>
+                        <span>📦 Waiting for build</span>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <span class="badge badge-failed">Failed</span>
+                        <span class="card-id">#DEL-1021</span>
+                    </div>
+                    <h3>Style Fix - Button Hover</h3>
+                    <p>Jenkins build failed due to merge conflict in <code>style.css</code>.</p>
+                    <div class="card-footer">
+                        <span>⏱ 1 hr ago</span>
+                        <span>⚠️ Check pipeline logs</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER / CONTACT -->
+        <footer id="contact" class="footer">
+            <p>Project 2 • Static Website on EC2 • Terraform + Jenkins + GitHub</p>
+            <p>Maintained by <strong>Rohit (DevOps Trainee)</strong></p>
+        </footer>
+    </main>
+</body>
+</html>
